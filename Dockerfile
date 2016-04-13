@@ -2,7 +2,7 @@ FROM alpine
 
 MAINTAINER cd "cleardevice@gmail.com"
 
-RUN apk add curl jq --no-cache && \
+RUN apk add curl jq php php-json --no-cache && \
     mkdir /data
 
 WORKDIR /data
